@@ -1,0 +1,78 @@
+[
+    {
+        "merged": "C:\\Users\\AO132\\.gradle\\daemon\\7.5\\com.example.islami.app-merged_res-11:\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\AO132\\.gradle\\daemon\\7.5\\com.example.islami.app-main-5:\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "com.example.islami.app-merged_res-11:/drawable-xxhdpi_splash_screen_night.png.flat",
+        "source": "com.example.islami.app-main-5:/drawable-xxhdpi/splash_screen_night.png"
+    },
+    {
+        "merged": "com.example.islami.app-merged_res-11:/drawable-hdpi_splash_screen.png.flat",
+        "source": "com.example.islami.app-main-5:/drawable-hdpi/splash_screen.png"
+    },
+    {
+        "merged": "com.example.islami.app-merged_res-11:/drawable-ldpi_splash_screen.png.flat",
+        "source": "com.example.islami.app-main-5:/drawable-ldpi/splash_screen.png"
+    },
+    {
+        "merged": "C:\\Users\\AO132\\.gradle\\daemon\\7.5\\com.example.islami.app-merged_res-11:\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\AO132\\.gradle\\daemon\\7.5\\com.example.islami.app-main-5:\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\AO132\\.gradle\\daemon\\7.5\\com.example.islami.app-merged_res-11:\\drawable_launch_background.xml.flat",
+        "source": "C:\\Users\\AO132\\.gradle\\daemon\\7.5\\com.example.islami.app-main-5:\\drawable\\launch_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\AO132\\.gradle\\daemon\\7.5\\com.example.islami.app-merged_res-11:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\AO132\\.gradle\\daemon\\7.5\\com.example.islami.app-main-5:\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "com.example.islami.app-merged_res-11:/drawable-xxxhdpi_splash_screen.png.flat",
+        "source": "com.example.islami.app-main-5:/drawable-xxxhdpi/splash_screen.png"
+    },
+    {
+        "merged": "com.example.islami.app-merged_res-11:/drawable-xxxhdpi_splash_screen_night.png.flat",
+        "source": "com.example.islami.app-main-5:/drawable-xxxhdpi/splash_screen_night.png"
+    },
+    {
+        "merged": "com.example.islami.app-merged_res-11:/drawable-hdpi_splash_screen_night.png.flat",
+        "source": "com.example.islami.app-main-5:/drawable-hdpi/splash_screen_night.png"
+    },
+    {
+        "merged": "com.example.islami.app-merged_res-11:/drawable-xxhdpi_splash_screen.png.flat",
+        "source": "com.example.islami.app-main-5:/drawable-xxhdpi/splash_screen.png"
+    },
+    {
+        "merged": "com.example.islami.app-merged_res-11:/drawable-ldpi_splash_screen_night.png.flat",
+        "source": "com.example.islami.app-main-5:/drawable-ldpi/splash_screen_night.png"
+    },
+    {
+        "merged": "com.example.islami.app-merged_res-11:/drawable-mdpi_splash_screen_night.png.flat",
+        "source": "com.example.islami.app-main-5:/drawable-mdpi/splash_screen_night.png"
+    },
+    {
+        "merged": "C:\\Users\\AO132\\.gradle\\daemon\\7.5\\com.example.islami.app-merged_res-11:\\drawable-v21_launch_background.xml.flat",
+        "source": "C:\\Users\\AO132\\.gradle\\daemon\\7.5\\com.example.islami.app-main-5:\\drawable-v21\\launch_background.xml"
+    },
+    {
+        "merged": "com.example.islami.app-merged_res-11:/drawable-xhdpi_splash_screen.png.flat",
+        "source": "com.example.islami.app-main-5:/drawable-xhdpi/splash_screen.png"
+    },
+    {
+        "merged": "com.example.islami.app-merged_res-11:/drawable-xhdpi_splash_screen_night.png.flat",
+        "source": "com.example.islami.app-main-5:/drawable-xhdpi/splash_screen_night.png"
+    },
+    {
+        "merged": "com.example.islami.app-merged_res-11:/drawable-mdpi_splash_screen.png.flat",
+        "source": "com.example.islami.app-main-5:/drawable-mdpi/splash_screen.png"
+    },
+    {
+        "merged": "C:\\Users\\AO132\\.gradle\\daemon\\7.5\\com.example.islami.app-merged_res-11:\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\AO132\\.gradle\\daemon\\7.5\\com.example.islami.app-main-5:\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\AO132\\.gradle\\daemon\\7.5\\com.example.islami.app-merged_res-11:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\AO132\\.gradle\\daemon\\7.5\\com.example.islami.app-main-5:\\mipmap-xhdpi\\ic_launcher.png"
+    }
+]
