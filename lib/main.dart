@@ -14,14 +14,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       
       debugShowCheckedModeBanner: false,
-      routes: {
-        HomeScreen.routeName:(context)=>const HomeScreen()
-      },
-      title: 'Flutter Demo',
-      theme: ThemeData(
-       
-        primarySwatch: Colors.blue,
-      ),
+     routes: {
+      HomeScreen.routeName:(context) => const HomeScreen()
+     },
+     home: const HomeScreen(),
+  
     );
   }
 }
