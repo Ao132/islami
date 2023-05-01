@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:islami/home_screen.dart';
+import 'package:islami/theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,9 +16,11 @@ class MyApp extends StatelessWidget {
       
       debugShowCheckedModeBanner: false,
      routes: {
-      HomeScreen.routeName:(context) => const HomeScreen()
+      HomeScreen.routeName:(context) =>    HomeScreen()
      },
-     home: const HomeScreen(),
+     home:  HomeScreen(),
+     theme: AppTheme.lightTheme,
+     darkTheme: AppTheme.nightTheme,
   
     );
   }
