@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:islami/quran/sura.dart';
 import 'package:islami/theme.dart';
 
+// ignore: must_be_immutable
 class QuranTab extends StatelessWidget {
   List<String> names = [
     "الفاتحه",
@@ -116,8 +119,10 @@ class QuranTab extends StatelessWidget {
     "المسد",
     "الإخلاص",
     "الفلق",
-    "الناس",
+    "الناس"
   ];
+
+  QuranTab({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -129,7 +134,7 @@ class QuranTab extends StatelessWidget {
           thickness: 2,
         ),
         Text(
-          'Sura Name',
+          AppLocalizations.of(context)!.sura_name,
           style: Theme.of(context).textTheme.titleMedium,
         ),
         Divider(
@@ -142,10 +147,15 @@ class QuranTab extends StatelessWidget {
               color: AppTheme.lightPrimary,
               thickness: 2,
             ),
-            itemBuilder: (context, index) => Text(
-              names[index],
-              style: Theme.of(context).textTheme.titleSmall,
-              textAlign: TextAlign.center,
+            itemBuilder: (context, index) => InkWell(
+              onTap: () {
+                Navigator.of(context).pushNamed(Sura.routeName, arguments: SuraDetailsArgs(name: names[index], index: index));
+              },
+              child: Text(
+                names[index],
+                style: Theme.of(context).textTheme.titleSmall,
+                textAlign: TextAlign.center,
+              ),
             ),
             itemCount: names.length,
           ),

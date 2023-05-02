@@ -30,6 +30,10 @@ flutter_lints
 2.17
 file:///C:/Users/AO132/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-2.0.1/
 file:///C:/Users/AO132/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-2.0.1/lib/
+intl
+2.12
+file:///C:/Users/AO132/AppData/Local/Pub/Cache/hosted/pub.dev/intl-0.17.0/
+file:///C:/Users/AO132/AppData/Local/Pub/Cache/hosted/pub.dev/intl-0.17.0/lib/
 js
 2.16
 file:///C:/Users/AO132/AppData/Local/Pub/Cache/hosted/pub.dev/js-0.6.5/
@@ -94,6 +98,10 @@ flutter
 2.17
 file:///C:/flutter/packages/flutter/
 file:///C:/flutter/packages/flutter/lib/
+flutter_localizations
+2.17
+file:///C:/flutter/packages/flutter_localizations/
+file:///C:/flutter/packages/flutter_localizations/lib/
 flutter_test
 2.17
 file:///C:/flutter/packages/flutter_test/

@@ -1,6 +1,8 @@
-
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:islami/hadeeth/hadeeth_content_screen.dart';
 import 'package:islami/home_screen.dart';
+import 'package:islami/quran/sura.dart';
 import 'package:islami/theme.dart';
 
 void main() {
@@ -13,16 +15,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      
       debugShowCheckedModeBanner: false,
-     routes: {
-      HomeScreen.routeName:(context) =>    HomeScreen()
-     },
-     home:  HomeScreen(),
-     theme: AppTheme.lightTheme,
-     darkTheme: AppTheme.nightTheme,
-  
+      routes: {
+        HomeScreen.routeName: (context) => HomeScreen(),
+        Sura.routeName: (context) => Sura(),
+        HadeethContentScreen.routeName: (context) => HadeethContentScreen(),
+      },
+      home: HomeScreen(),
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.nightTheme,
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
+      locale: const Locale('en'),
     );
   }
 }
-
