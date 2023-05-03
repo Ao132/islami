@@ -25,7 +25,7 @@ class LangBottomSheet extends StatelessWidget {
               )
             ],
           ),
-          SizedBox(height: MediaQuery.of(context).size.height * .1),
+          SizedBox(height: MediaQuery.of(context).size.height *.1),
           Text(
             AppLocalizations.of(context)!.arabic,
             style: Theme.of(context).textTheme.titleSmall,

@@ -18,8 +18,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         HomeScreen.routeName: (context) => HomeScreen(),
-        Sura.routeName: (context) => Sura(),
-        HadeethContentScreen.routeName: (context) => HadeethContentScreen(),
+        Sura.routeName: (context) => const Sura(),
+        HadeethContentScreen.routeName: (context) => const HadeethContentScreen(),
       },
       home: HomeScreen(),
       theme: AppTheme.lightTheme,

@@ -3,7 +3,7 @@ import 'package:islami/hadeeth/hadeeth_tab.dart';
 import 'package:islami/hadeeth/item_hadeeth_content.dart';
 
 class HadeethContentScreen extends StatefulWidget {
-  static const String routeName = 'hadeeth_det_Sc';
+  static const String routeName = 'hadeeth_con_Sc';
 
   const HadeethContentScreen({super.key});
 

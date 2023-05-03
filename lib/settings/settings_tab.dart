@@ -30,7 +30,9 @@ class _SettingsTabState extends State<SettingsTab> {
             child: Container(
                 margin: const EdgeInsets.all(12),
                 padding: const EdgeInsets.all(12),
-                decoration: BoxDecoration(borderRadius: BorderRadius.circular(12), color: AppTheme.lightPrimary),
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    color: AppTheme.lightPrimary),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -54,7 +56,9 @@ class _SettingsTabState extends State<SettingsTab> {
             child: Container(
                 margin: const EdgeInsets.all(12),
                 padding: const EdgeInsets.all(12),
-                decoration: BoxDecoration(borderRadius: BorderRadius.circular(12), color: AppTheme.lightPrimary),
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    color: AppTheme.lightPrimary),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -73,14 +77,18 @@ class _SettingsTabState extends State<SettingsTab> {
 
   void langBottomSheet() {
     showModalBottomSheet(
-        shape: const RoundedRectangleBorder(borderRadius: BorderRadius.only(topLeft: Radius.circular(15), topRight: Radius.circular(15))),
+        shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(15), topRight: Radius.circular(15))),
         context: context,
         builder: (context) => const LangBottomSheet());
   }
 
   void themeingBottomSheet() {
     showModalBottomSheet(
-        shape: const RoundedRectangleBorder(borderRadius: BorderRadius.only(topLeft: Radius.circular(15), topRight: Radius.circular(15))),
+        shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(15), topRight: Radius.circular(15))),
         context: context,
         builder: (context) => const themeBottomSheet());
   }
