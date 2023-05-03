@@ -19,7 +19,8 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Stack(children: [
-      Image.asset('assets/images/main_background.png', fit: BoxFit.fill, height: double.infinity, width: double.infinity),
+      Image.asset('assets/images/main_background.png',
+          fit: BoxFit.fill, height: double.infinity, width: double.infinity),
       Scaffold(
         body: tabs[selectedIndex],
         appBar: AppBar(
@@ -29,7 +30,8 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
         bottomNavigationBar: Theme(
-          data: Theme.of(context).copyWith(canvasColor: Theme.of(context).primaryColor),
+          data: Theme.of(context)
+              .copyWith(canvasColor: Theme.of(context).primaryColor),
           child: BottomNavigationBar(
               onTap: (index) {
                 selectedIndex = index;
@@ -57,12 +59,20 @@ class _HomeScreenState extends State<HomeScreen> {
                     icon: const ImageIcon(
                       AssetImage('assets/images/radio_icon.png'),
                     )),
-                BottomNavigationBarItem(label: AppLocalizations.of(context)!.settings, icon: const Icon(Icons.settings))
+                BottomNavigationBarItem(
+                    label: AppLocalizations.of(context)!.settings,
+                    icon: const Icon(Icons.settings))
               ]),
         ),
       ),
     ]);
   }
 
-  List<Widget> tabs = [QuranTab(), HadeethTab(), const SebhaTab(), const RadioTab(), SettingsTab()];
+  List<Widget> tabs = [
+    QuranTab(),
+    HadeethTab(),
+    const SebhaTab(),
+    const RadioTab(),
+    SettingsTab()
+  ];
 }

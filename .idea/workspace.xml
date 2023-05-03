@@ -5,7 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19290a81-e128-418a-983a-f6d46edcbe74" name="Changes" comment="add localization to app&#10;add settings tab">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/hadeeth/hadeeth_content_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/hadeeth/hadeeth_content_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/hadeeth/hadeeth_tab.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/hadeeth/hadeeth_tab.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/hadeeth/item_hadeeth_content.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/hadeeth/item_hadeeth_content.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/hadeeth/item_hadeeth_name.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/hadeeth/item_hadeeth_name.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/home_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/l10n/app_ar.arb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/l10n/app_ar.arb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/l10n/app_en.arb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/l10n/app_en.arb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/quran/item_sura_details.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/quran/item_sura_details.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/quran/quran_tab.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/quran/quran_tab.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/quran/sura.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/quran/sura.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/radio/radio_tab.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/radio/radio_tab.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/settings/lang_bottom_sheet.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/settings/lang_bottom_sheet.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/settings/settings_tab.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/settings/settings_tab.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/settings/theme_bottom_sheet.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/settings/theme_bottom_sheet.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tasbeh/sebha_tab.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tasbeh/sebha_tab.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/theme.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683064834318</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add localization to app&#10;add settings tab">
+      <created>1683126071734</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683126071734</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">

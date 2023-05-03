@@ -149,7 +149,9 @@ class QuranTab extends StatelessWidget {
             ),
             itemBuilder: (context, index) => InkWell(
               onTap: () {
-                Navigator.of(context).pushNamed(Sura.routeName, arguments: SuraDetailsArgs(name: names[index], index: index));
+                Navigator.of(context).pushNamed(Sura.routeName,
+                    arguments:
+                        SuraDetailsArgs(name: names[index], index: index));
               },
               child: Text(
                 names[index],

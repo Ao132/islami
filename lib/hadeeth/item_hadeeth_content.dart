@@ -3,7 +3,7 @@ import 'package:islami/hadeeth/hadeeth_content_screen.dart';
 
 // ignore: must_be_immutable
 class ItemHadeethDetails extends StatelessWidget {
-  ItemHadeethDetails({super.key,required this.content});
+  ItemHadeethDetails({super.key, required this.content});
   String content;
   @override
   Widget build(BuildContext context) {

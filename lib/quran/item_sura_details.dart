@@ -8,7 +8,7 @@ class ItemSuraDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      '$name(${index+1})',
+      '$name(${index + 1})',
       style: Theme.of(context).textTheme.titleSmall,
       textAlign: TextAlign.center,
       textDirection: TextDirection.rtl,
