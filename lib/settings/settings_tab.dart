@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:islami/providers/app_config_provider.dart';
 import 'package:islami/settings/lang_bottom_sheet.dart';
 import 'package:islami/settings/theme_bottom_sheet.dart';
 import 'package:islami/theme.dart';
+import 'package:provider/provider.dart';
 
 class SettingsTab extends StatefulWidget {
   const SettingsTab({super.key});
@@ -14,6 +16,8 @@ class SettingsTab extends StatefulWidget {
 class _SettingsTabState extends State<SettingsTab> {
   @override
   Widget build(BuildContext context) {
+    AppConfigProvider provider = Provider.of<AppConfigProvider>(context);
+
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Column(
@@ -31,13 +35,14 @@ class _SettingsTabState extends State<SettingsTab> {
                 margin: const EdgeInsets.all(12),
                 padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
+                    border: Border.all(color: AppTheme.lightPrimary),
                     borderRadius: BorderRadius.circular(12),
-                    color: AppTheme.lightPrimary),
+                    color: provider.isDark() ? AppTheme.darkPrimary : AppTheme.lightPrimary),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      AppLocalizations.of(context)!.english,
+                      provider.appLanguage == 'en' ? AppLocalizations.of(context)!.english : AppLocalizations.of(context)!.arabic,
                       style: Theme.of(context).textTheme.titleSmall,
                     ),
                     const Icon(Icons.arrow_drop_down_outlined)
@@ -57,13 +62,14 @@ class _SettingsTabState extends State<SettingsTab> {
                 margin: const EdgeInsets.all(12),
                 padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
+                    border: Border.all(color: AppTheme.lightPrimary),
                     borderRadius: BorderRadius.circular(12),
-                    color: AppTheme.lightPrimary),
+                    color: provider.isDark() ? AppTheme.darkPrimary : AppTheme.lightPrimary),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      AppLocalizations.of(context)!.light,
+                      !provider.isDark() ? AppLocalizations.of(context)!.light : AppLocalizations.of(context)!.dark,
                       style: Theme.of(context).textTheme.titleSmall,
                     ),
                     const Icon(Icons.arrow_drop_down_outlined)
@@ -77,19 +83,15 @@ class _SettingsTabState extends State<SettingsTab> {
 
   void langBottomSheet() {
     showModalBottomSheet(
-        shape: const RoundedRectangleBorder(
-            borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(15), topRight: Radius.circular(15))),
+        shape: const RoundedRectangleBorder(borderRadius: BorderRadius.only(topLeft: Radius.circular(15), topRight: Radius.circular(15))),
         context: context,
         builder: (context) => const LangBottomSheet());
   }
 
   void themeingBottomSheet() {
     showModalBottomSheet(
-        shape: const RoundedRectangleBorder(
-            borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(15), topRight: Radius.circular(15))),
+        shape: const RoundedRectangleBorder(borderRadius: BorderRadius.only(topLeft: Radius.circular(15), topRight: Radius.circular(15))),
         context: context,
-        builder: (context) => const themeBottomSheet());
+        builder: (context) => const ThemeBottomSheet());
   }
 }

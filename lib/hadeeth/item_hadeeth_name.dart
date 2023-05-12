@@ -10,8 +10,7 @@ class ItemHadeethName extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Navigator.of(context)
-            .pushNamed(HadeethContentScreen.routeName, arguments: hadeeth);
+        Navigator.of(context).pushNamed(HadeethContentScreen.routeName, arguments: hadeeth);
       },
       child: Text(
         hadeeth.title,
