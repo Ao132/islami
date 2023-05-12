@@ -22,7 +22,11 @@ class _HadeethTabState extends State<HadeethTab> {
     }
 
     return Column(children: [
-      Expanded(flex: 2, child: Image.asset('assets/images/hadeeth_tab_image.png')),
+
+      Expanded(
+        flex: 2,
+         child:
+          Image.asset('assets/images/hadeeth_tab_image.png')),
       Divider(
         color: AppTheme.lightPrimary,
         thickness: 2,

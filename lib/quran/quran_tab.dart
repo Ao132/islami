@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:islami/providers/app_config_provider.dart';
 import 'package:islami/quran/sura.dart';
 import 'package:islami/theme.dart';
+import 'package:provider/provider.dart';
 
 // ignore: must_be_immutable
 class QuranTab extends StatelessWidget {
@@ -126,11 +128,13 @@ class QuranTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    AppConfigProvider provider = Provider.of<AppConfigProvider>(context);
+
     return Column(
       children: [
         Center(child: Image.asset('assets/images/quran_tab_image.png')),
         Divider(
-          color: AppTheme.lightPrimary,
+          color: provider.isDark() ? AppTheme.yellowColor : AppTheme.lightPrimary,
           thickness: 2,
         ),
         Text(
@@ -138,20 +142,18 @@ class QuranTab extends StatelessWidget {
           style: Theme.of(context).textTheme.titleMedium,
         ),
         Divider(
-          color: AppTheme.lightPrimary,
+          color: provider.isDark() ? AppTheme.yellowColor : AppTheme.lightPrimary,
           thickness: 3,
         ),
         Expanded(
           child: ListView.separated(
             separatorBuilder: (context, index) => Divider(
-              color: AppTheme.lightPrimary,
+              color: provider.isDark() ? AppTheme.yellowColor : AppTheme.lightPrimary,
               thickness: 2,
             ),
             itemBuilder: (context, index) => InkWell(
               onTap: () {
-                Navigator.of(context).pushNamed(Sura.routeName,
-                    arguments:
-                        SuraDetailsArgs(name: names[index], index: index));
+                Navigator.of(context).pushNamed(Sura.routeName, arguments: SuraDetailsArgs(name: names[index], index: index));
               },
               child: Text(
                 names[index],

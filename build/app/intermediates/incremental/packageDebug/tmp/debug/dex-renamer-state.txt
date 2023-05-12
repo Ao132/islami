@@ -1,4 +1,4 @@
-#Tue May 02 22:58:35 EET 2023
+#Fri May 12 17:48:13 EET 2023
 base.0=C\:\\Users\\AO132\\Flutter apps\\route\\islami\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
